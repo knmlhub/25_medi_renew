@@ -13,10 +13,6 @@ HASH_ALGORITHM = "pbkdf2_sha256"
 app = Flask(__name__)
 app.secret_key = b"opensesame"
 
-# 必ずこの関数が必要
-def handler(environ, start_response):
-    return app(environ, start_response)
-
 
 
 
