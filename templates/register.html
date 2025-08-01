@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>新規ユーザー</title>
-	<link rel="stylesheet" href="/static/styles.css">
+	<link rel="stylesheet" href="/static/styles2.css">
 </head>
 <body>
 	<h2>{{ message }}</h2>
@@ -15,6 +15,8 @@
 		<input type="password" id="password" name="password"><br>
 		<input type="submit" value="登録">
 	</form>
-	<a href="{{ url_for('index') }}">もどる</a>
+	<div class="form-links">
+		<a href="{{ url_for('index') }}">もどる</a>
+	</div>
 </body>
 </html>

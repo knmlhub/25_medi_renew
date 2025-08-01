@@ -1,0 +1,55 @@
+/* フォームの全体レイアウト */
+form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    margin: 40px auto;
+}
+
+/* ラベルのスタイル */
+label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 6px;
+    color: #14171a;
+}
+
+/* テキスト入力欄 */
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 16px;
+    border: 1px solid #ccd6dd;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+/* 送信ボタン */
+input[type="submit"] {
+    background-color: #1da1f2;
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 9999px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.2s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #0d8ddb;
+}
+
+/* 下部リンク（新規登録・戻る） */
+.form-links {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.form-links a {
+    margin: 0 10px;
+    font-weight: bold;
+}
