@@ -214,6 +214,9 @@ def create():
     text = request.form.get("text")
     date = request.form.get("date")
 
+    if not title or not text or not date:
+        return render_template("new.html", error_empty=True, form=request.form)
+
     query = """
         INSERT INTO diary (user_id, title, text, date)
         VALUES (%s, %s, %s, %s)
